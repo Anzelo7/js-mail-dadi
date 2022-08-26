@@ -7,5 +7,9 @@ let computer = y
 let xd = Mathfloor(Math.random() * 6) + 1;
 //+ alto vincitore
 if (xd = 1, xd <= 6, xd++) {
-    document.
+    x = xd
+    document.getElementById('dado').innerHTML = 'Winner'
+} else if (xd = 1, xd <= 6, xd++) {
+    y = xd
+    document.getElementById('dado').innerHTML = 'Winner'
 }
