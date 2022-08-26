@@ -1,15 +1,17 @@
 console.log('JS OK')
 
 //due giocatori
-let player = x
-let computer = y
+let utente = Math.floor(Math.random() * 6) + 1;
+let computer = Math.floor(Math.random() * 6) + 1;
+
+console.log(utente)
+console.log(computer)
 //n casuale da 1/6
-let xd = Mathfloor(Math.random() * 6) + 1;
-//+ alto vincitore
-if (xd = 1, xd <= 6, xd++) {
-    x = xd
-    document.getElementById('dado').innerHTML = 'Winner'
-} else if (xd = 1, xd <= 6, xd++) {
-    y = xd
-    document.getElementById('dado').innerHTML = 'Winner'
+
+if (utente > computer) {
+    document.getElementById('dado').innerHTML = 'Winner utente'
+} else if (computer > utente) {
+    document.getElementById('dado').innerHTML = 'Winner computer'
+} else {
+    document.getElementById('dado').innerHTML = 'Draw'
 }
